@@ -5,11 +5,9 @@ using namespace std;
 int main()
 
 {
-
-	int t,x;//test cases	cin>>t;
-
-    for(x=0;x<t;x++)
-
+int t;
+cin>>t;
+	while(t--)
 	{
 
 		long long int sum=0,i,n;
@@ -27,10 +25,8 @@ int main()
 		{
 
 			sum+=mp[str[i]];
-
-			mp[str[i]]++;
-
-		}
+           	mp[str[i]]++;
+          }
 
 		cout<<sum<<endl;
 
