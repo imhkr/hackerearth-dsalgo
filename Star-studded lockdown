@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+
+{
+
+	int t,x;//test cases	cin>>t;
+
+    for(x=0;x<t;x++)
+
+	{
+
+		long long int sum=0,i,n;
+
+		cin>>n;
+
+		unordered_map<char,long long int> mp;
+
+		string str;
+
+		cin>>str;//getline(cin,str)
+
+		for(i=0;i<str.size();i++)
+
+		{
+
+			sum+=mp[str[i]];
+
+			mp[str[i]]++;
+
+		}
+
+		cout<<sum<<endl;
+
+	}
+
+}
